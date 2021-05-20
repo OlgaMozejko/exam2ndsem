@@ -1,0 +1,19 @@
+.spacer1 {
+  position: relative;
+  animation: spacer1 9s infinite; 
+}
+
+@keyframes spacer1{
+    0% {
+      transform: translateX(-100px) rotateY(0deg);
+    }
+    49% {
+      transform: translateX(50px) rotateY(0deg);
+    }
+    50% {
+      transform: translateX(50px) rotateY(360deg);
+    }
+    100% {
+      transform: translateX(-100px) rotateY(360deg);
+    }
+      } 
