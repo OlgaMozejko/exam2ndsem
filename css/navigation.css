@@ -1,0 +1,43 @@
+.pagination {
+
+    display: inline-block;
+    margin-top: 20px;
+
+}
+
+.pagination a {
+
+    color: white;
+    z-index: 3000;
+    float: left;
+    position: relative;
+    left: 600px;
+    padding: 9px 17px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+
+}
+
+.pagination a.active {
+
+    background-color: #264653;
+    color: white;
+
+}
+
+.pagination a:hover:not(.active) {
+    
+    background-color: #264653;
+}
+
+.pagination a:first-child {
+    
+    
+}
+
+.pagination a:last-child {
+    
+    
+}
