@@ -1,150 +1,167 @@
 <!DOCTYPE html>
-<html class="no-js"> 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Experience The Space</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience The Space</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 
-       
-		<!--
+
+    <!--
 			* toturial by Petr Tichy - Ihatetomatoes.net
 			* URL - http://ihatetomatoes.net/how-to-zoom-into-an-image-on-scroll/
 		-->
-		
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/moving.css">
-        <link rel="stylesheet" href="css/navigation.css">
-        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
 
-    </head>
-    <body class="loading">
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=580445718641008";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-       
-        <div id="preloader">
-	       	<img src="img/planet1.jpg" />
-	       	<img src="img/planet2.jpg" />
-	       	<img src="img/planet3.jpg" />
-	       	<img src="img/landscape1.jpg" />
-	       	<img src="img/flag.jpg" />
-       	</div> 
-       	
-       	<nav>
-       	    
-       	    <section class="pagination-bar">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/moving.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <script src="js/vendor/modernizr-2.7.1.min.js"></script>
 
-            <div class="pagination">
-                <a href="#">&laquo;</a>
-                <a class="active" href="slide-1">1</a>
-                <a class="#" href="#slide-2">2</a>
-                <a href="#slide-3">3</a>
-                <a href="#slide-4">4</a>
-                <a href="#slide-5">5</a>
-                <a href="#slide-6">6</a>
-                <a href="#slide-7">7</a>
-                <a href="#">&raquo;</a>
+</head>
+
+<body class="loading">
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=580445718641008";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <nav class="off-canvas-menu">
+
+        <!--
+			* tutorial by W3 schools - Edited by Kenia Ordoñez to fit our current JS and also make sure it works smoothly with the code
+		-->
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <a href="#">Introduction</a>
+            <a href="#slide-1">Journey begins</a>
+            <a href="#slide-2">Finding home</a>
+            <a href="#slide-3">Who is the space?</a>
+            <a href="#slide-4">The space</a>
+            <a href="#slide-5">Joining</a>
+            <a href="#slide-6">Collaboration</a>
+            <a href="#slide-7">Contact</a>
+            
+        </div>
+
+        <div id="main">
+
+            <span class="icon-navigation" onclick="openNav()">&#9776;</span>
+        </div>
+
+    </nav>
+
+    <div id="preloader">
+        <img src="img/planet1.jpg" />
+        <img src="img/planet2.jpg" />
+        <img src="img/planet3.jpg" />
+        <img src="img/landscape1.jpg" />
+        <img src="img/flag.jpg" />
+    </div>
+
+
+    <main data-top="background-color: rgba(0,0,0,1)" data-center-bottom="background-color: rgba(0,0,0,1)" data--200p-top="background-color: rgba(0,0,0,1)" data-anchor-target="#slide-1">
+
+
+        <section id="slide-1" class="homeSlide">
+            <!-- <Background image is being resized to 200% of it's original size and the top and left offset increased to -50%.-->
+            <div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-1">
+
+                <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-1">
+                    <!-- put button here -->
+
+                    <!-- animate this items -->
+                    <div>
+                        <img src="img/spaceastronaut1.png" class="spacer1" alt="spacer1">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="slide-2" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-2">
+            <div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-2">
+                <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-2">
+                    <div>
+                        <img src="img/2spacer2.png" class="spacer2" alt="spacer2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="slide-3" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-3">
+            <div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-3">
+                <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-3">
+                    <div>
+                        <img src="img/forplanet3.png" class="planet" alt="planet">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="slide-4" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-4">
+            <div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-4">
+                <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-4">
+                    <div>
+                        <img src="img/5flag.png" class="flag" alt="flag">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="slide-5" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-5">
+            <div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-5">
+                <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-5">
+                    <div>
+                        <img src="img/5flag2.png" class="flag2" alt="flag2">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="slide-6" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-6">
+            <div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-6">
+                <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-6">
+                    <div>
+                        <img src="img/5vol22.png" class="spacer3" alt="spacer3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="slide-7" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-7">
+            <div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 1; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-7">
+                <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 1;" data-anchor-target="#slide-7">
+                    <div>
+                        <img src="img/6vol12.png" class="spacer4" alt="spacer4">
+                    </div>
+                </div>
+
             </div>
 
         </section>
-        
-       	</nav>
 
-       	<main data-top="background-color: rgba(0,0,0,1)" data-center-bottom="background-color: rgba(0,0,0,1)" data--200p-top="background-color: rgba(0,0,0,1)" data-anchor-target="#slide-1">
-       	
-       	 
-	        <section id="slide-1" class="homeSlide">
-                <!-- <Background image is being resized to 200% of it's original size and the top and left offset increased to -50%.-->
-	        	<div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-1">
+    </main>
 
-	    		<div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-1">
-		    		<!-- put button here -->
-                    
-                    <!-- animate this items -->
-                    <div>
-                    <img src="img/spaceastronaut1.png" class="spacer1" alt="spacer1">
-                    </div>
-	    		</div>          
-		        </div>
-		    </section>
-            
-		    
-           <section id="slide-2" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-2">
-	        	<div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-2">
-	    		<div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-2">
-                    <div>
-                    <img src="img/2spacer2.png" class="spacer2" alt="spacer2">
-                    </div>
-	    		</div> </div>
-		    </section>
-            
-           <section id="slide-3" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-3">
-	        	<div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-3">
-	    		<div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-3">
-		    		  <div>
-                    <img src="img/forplanet3.png" class="planet" alt="planet">
-                    </div>
-	    		</div> </div>
-		    </section>
-            
-                <section id="slide-4" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-4">
-	        	<div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-4">
-	    		<div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-4">
-		    		 <div>
-                    <img src="img/5flag.png" class="flag" alt="flag">
-                    </div>
-	    		</div> </div>
-		    </section>
-            
-                <section id="slide-5" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-5">
-	        	<div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-5">
-	    		<div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-5">
-		    		 <div>
-                    <img src="img/5flag2.png" class="flag2" alt="flag2">
-                    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/imagesloaded.js"></script>
+    <script src="js/skrollr.js"></script>
+    <script src="js/_main.js"></script>
 
-	    		</div> </div>
-		    </section>
-            
-                <section id="slide-6" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-6">
-	        	<div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-6">
-	    		<div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-6">
-                    <div>
-                    <img src="img/5vol22.png" class="spacer3" alt="spacer3">
-                    </div>
-	    		</div> </div>
-		    </section>
-            
-		    
-                <section id="slide-7" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-7">
-	        	<div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 1; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-7">
-	    		<div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 1;" data-anchor-target="#slide-7">
-                    <div>
-                    <img src="img/6vol12.png" class="spacer4" alt="spacer4">
-                    </div>
-	    		</div>
-                
-                </div>
 
-		    </section>
-		    
-		</main>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="js/imagesloaded.js"></script>
-        <script src="js/skrollr.js"></script>
-        <script src="js/_main.js"></script>
-        
-
-    </body>
-</html>
+</body></html>

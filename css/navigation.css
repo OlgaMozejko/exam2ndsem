@@ -1,43 +1,86 @@
-.pagination {
+/* The off-canvas menu idea comes from W3 Schools https://www.w3schools.com/howto/tryit.asp? filename=tryhow_js_sidenav_push */
 
-    display: inline-block;
-    margin-top: 20px;
+/* Needed to add an extra class to make sure the menu was above all the images */
 
-}
+.off-canvas-menu {
 
-.pagination a {
-
-    color: white;
+    margin: 20px 20px 20px 20px;
     z-index: 3000;
-    float: left;
-    position: relative;
-    left: 600px;
-    padding: 9px 17px;
+    position: absolute;
+}
+
+body {
+
+    transition: background-color .5s;
+}
+
+/* It has a fixed position so it pushes the canvas off */
+
+.sidenav {
+    
+    z-index: 30;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2a9d8f;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+
+}
+
+.sidenav a {
+    
+    padding: 25px 8px 8px 32px;
+    font-family: Karla, sans-serif;
     text-decoration: none;
-    border-radius: 30px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 700;
+    font-size: 25px;
+    color: #f1c064;
+    display: block;
+    transition: 0.3s;
+    
 
 }
 
-.pagination a.active {
-
-    background-color: #264653;
-    color: white;
-
+.sidenav a:hover {
+    
+    color: #f1f1f1;
 }
 
-.pagination a:hover:not(.active) {
-    
-    background-color: #264653;
+.icon-navigation {
+
+    font-size: 40px;
+    cursor: pointer;
+    color: #ffffff;
+    background: #2a9d8f;
+    padding: 15px;
+    border-radius: 50px 50px 50px 0px;
 }
 
-.pagination a:first-child {
+.sidenav .closebtn {
     
-    
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #ffffff;
 }
 
-.pagination a:last-child {
+#main {
     
-    
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
