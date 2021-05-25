@@ -1,11 +1,10 @@
-
 /* styling of images - spacers */
 
 .spacer1 {
     position: relative;
     align-content: center;
     justify-content: center;
-   margin: 0 auto;
+    margin: 0 auto;
     width: 50%;
     float: right;
     margin-top: -80px;
@@ -13,7 +12,7 @@
 
 .spacer2 {
     position: relative;
-   margin-top: -80px;
+    margin-top: -80px;
     width: 50%;
     float: right;
 }
@@ -32,7 +31,7 @@
     align-items: center;
     margin: 0 auto;
     width: 45%;
-    margin-left:  50px;
+    margin-left: 50px;
     margin-top: 30px;
 }
 
@@ -86,15 +85,21 @@
 /* text overlay on click styling */
 
 #reveal {
-    background-color: #dea36f;
+    
+    background: linear-gradient(90deg, rgba(241,192,100,1) 0%, rgba(241,192,100,0.3799894957983193) 62%);
+    padding: 20px 20px 20px 20px;
     z-index: 999;
     position: fixed;
     top: 25%;
     left: 15%;
     width: 250px;
-    height: 400px;
+    height: 150px;
     border-radius: 20px;
     display: none;
+    color: #ffffff;
+    font-size: 20px;
+    
+
 }
 
 .ftext1 {
@@ -102,7 +107,8 @@
 }
 
 .ftext2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat , sans-serif;
+
 }
 
 .change {
@@ -111,37 +117,82 @@
     top: 30%;
     right: 20%;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 18px 18px 18px 0px;
+    background: linear-gradient(90deg, rgba(151, 206, 187, 1) 0%, rgba(103, 199, 187, 1) 36%, rgba(85, 186, 174, 1) 67%);
     border: none;
+    font-family: 'Karla', sans-serif;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Animation found on code pen by Cole McCombs https://codepen.io/mccombsc/pen/ZEzxWPy */
+
+/* Used only the ring animation but created a unique button */
+
+button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid #67c7bb;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
 }
 
 .toggle_box {
     position: fixed;
     z-index: 9999;
+    
 }
 
 #reveal2 {
-    background-color: #dea36f;
+    
+    background: linear-gradient(90deg, rgba(222,163,111,1) 0%, rgba(222,163,111,0.6096813725490196) 62%);
     z-index: 999;
     position: fixed;
     top: 25%;
     left: 15%;
     width: 250px;
-    height: 400px;
+    height: 200px;
+    padding: 20px 20px 20px 20px;
     border-radius: 20px;
     display: none;
+    color: #ffffff;
 }
 
 #reveal3 {
-    background-color: #dea36f;
+    
+    background: linear-gradient(90deg, rgba(42,157,143,1) 0%, rgba(42,157,143,0.5480567226890756) 62%);
     z-index: 999;
     position: fixed;
     top: 25%;
     left: 15%;
-    width: 250px;
+    width: 350px;
     height: 400px;
+    padding: 20px 20px 20px 20px;
     border-radius: 20px;
     display: none;
+    color: #ffffff;
 }
 
 #reveal4 {
