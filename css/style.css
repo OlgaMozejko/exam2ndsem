@@ -1,3 +1,6 @@
+
+/* styling of images - spacers */
+
 .spacer1 {
     position: relative;
     align-content: center;
@@ -59,4 +62,132 @@
     margin: 0 auto;
     width: 50%;
     margin-top: 40px;
+}
+
+/* styling for text */
+
+.header {
+    font-family: 'Karla', sans-serif;
+    color: #F1C064;
+    font-size: 70px;
+    text-align: center;
+}
+
+.welcomet {
+    font-family: 'Montserrat', sans-serif;
+    color: #F1C064;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -40px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/* text overlay on click styling */
+
+#reveal {
+    background-color: #dea36f;
+    z-index: 999;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    width: 250px;
+    height: 400px;
+    border-radius: 20px;
+    display: none;
+}
+
+.ftext1 {
+    font-family: 'Karla', sans-serif;
+}
+
+.ftext2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.change {
+    position: fixed;
+    z-index: 999;
+    top: 30%;
+    right: 20%;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.toggle_box {
+    position: fixed;
+    z-index: 9999;
+}
+
+#reveal2 {
+    background-color: #dea36f;
+    z-index: 999;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    width: 250px;
+    height: 400px;
+    border-radius: 20px;
+    display: none;
+}
+
+#reveal3 {
+    background-color: #dea36f;
+    z-index: 999;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    width: 250px;
+    height: 400px;
+    border-radius: 20px;
+    display: none;
+}
+
+#reveal4 {
+    background-color: #dea36f;
+    z-index: 999;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    width: 250px;
+    height: 400px;
+    border-radius: 20px;
+    display: none;
+}
+
+#reveal5 {
+    background-color: #dea36f;
+    z-index: 999;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    width: 250px;
+    height: 400px;
+    border-radius: 20px;
+    display: none;
+}
+
+#reveal6 {
+    background-color: #dea36f;
+    z-index: 999;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    width: 250px;
+    height: 400px;
+    border-radius: 20px;
+    display: none;
+}
+
+#reveal7 {
+    background-color: #dea36f;
+    z-index: 999;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    width: 250px;
+    height: 400px;
+    border-radius: 20px;
+    display: none;
 }

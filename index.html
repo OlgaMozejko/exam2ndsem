@@ -9,39 +9,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 
-
     <!--
             the code builded up on 
 			* demo by Petr Tichy - Ihatetomatoes.net
 			* URL - http://ihatetomatoes.net/how-to-zoom-into-an-image-on-scroll/
-		-->
+    -->
 
-
+    <!-- styles as in demo -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <!-- styles for spacers/images + text -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- styles for animation -->
     <link rel="stylesheet" href="css/moving.css">
+    <!-- styles for navigation menu -->
     <link rel="stylesheet" href="css/navigation.css">
+    <!-- styles for social buttons -->
     <link rel="stylesheet" href="css/buttonstyle.css">
+    
+    <!-- fonts --->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">
+    
+    <!-- loading one js script just like in demo -->
     <script src="js/vendor/modernizr-2.7.1.min.js"></script>
 
 </head>
 
 <body class="loading">
-
+    
+        
     <nav class="off-canvas-menu">
 
         <!--
-			* tutorial by W3 schools - Edited by Kenia Ordoñez to fit our current JS and also make sure it works smoothly with the code
+			* tutorial by W3 schools - Edited to fit our current JS and also make sure it works smoothly with the code
 		-->
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-            <a href="#">Introduction</a>
+            <a href="#slide-0">Introduction</a>
             <a href="#slide-1">Journey begins</a>
             <a href="#slide-2">Finding home</a>
             <a href="#slide-3">Who is the space?</a>
@@ -59,35 +73,43 @@
 
     </nav>
 
+    
+        
 
+    <!-- preloader -->
     <div id="preloader">
+        <img src="img/mainbg.png" />
         <img src="img/planet1.jpg" />
         <img src="img/planet2.jpg" />
         <img src="img/planet3.jpg" />
+        <img src="img/landscape.jpg" />
+        <img src="img/landspace.jpg" />
+        <img src="img/landscape2.jpg" />
         <img src="img/landscape1.jpg" />
-        <img src="img/flag.jpg" />
     </div>
 
+    
 
-    <main data-top="background-color: rgba(0,0,0,1)" data-center-bottom="background-color: rgba(0,0,0,1)" data--200p-top="background-color: rgba(0,0,0,1)" data-anchor-target="#slide-1">
+    <main class="content" data-top="background-color: rgba(0,0,0,1)" data-center-bottom="background-color: rgba(0,0,0,1)" data--200p-top="background-color: rgba(0,0,0,1)" data-anchor-target="#slide-1">
 
-
-        <section id="slide-1" class="homeSlide">
+        
+        <!-- 1st section -->
+        
+        <section id="slide-0" class="homeSlide">
             <!-- <Background image is being resized to 200% of it's original size and the top and left offset increased to -50%.-->
-            <div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-1">
+            <div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-0">
 
-                <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-1">
-                    <!-- put button here -->
+                <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-0">
+                    
+                    <!-- welcoming text -->
+                    
+                        <h2 class="header">Welcome to your new journey</h2>
+                        <p class="welcomet">The Space is a non-profit that will help you out on your way.<br> Don't forget to explore the page for text boxes to guide you on the extraterrestrial journey.</p>
+                    
+                </div></div>
+                
 
-
-                    <!-- animate this items -->
-                    <div>
-                        <img src="img/spaceastronaut1.png" class="spacer1" alt="spacer1">
-                    </div>
-                </div>
-            </div>
-
-            <!--    Social buttons start here   -->
+            <!--    Social buttons   -->
 
             <div class="social">
 
@@ -95,28 +117,59 @@
                 <a href="https://www.instagram.com/the_space_aarhus/"><i class="fab fa-instagram"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSTAGRAM </a>
                 <a href="https://thespaceaarhus.com/"><img src="img/logo1.png" width="60px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE SPACE</a>
                 <a href="https://www.linkedin.com/company/the-space-aarhus/"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LINKED&nbsp;IN</a>
+            </div> 
+        </section>
+
+        
+        <!-- 2nd section -->    
+           
+        <section id="slide-1" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-1">
+            <div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-1">
+                <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-1">
+                    <!-- animated astronaut-->
+                    <div>
+                        <img src="img/spaceastronaut1.png" class="spacer1" alt="spacer1">
+                                                        
+                    </div>                    
+                </div>                               
             </div>
-            <!--    Social buttons end here   -->
+
+            <!--    Social buttons -->
+
+            <div class="social">
+                <a href="https://www.facebook.com/thespaceaarhus"><i class="fab fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FACEBOOK</a>
+                <a href="https://www.instagram.com/the_space_aarhus/"><i class="fab fa-instagram"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSTAGRAM </a>
+                <a href="https://thespaceaarhus.com/"><img src="img/logo1.png" width="60px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE SPACE</a>
+                <a href="https://www.linkedin.com/company/the-space-aarhus/"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LINKED&nbsp;IN</a>
+            </div>
+            
+            <!-- text box toggle -->
+            
+            <div class="toggle_box">
+            <button class="change" onmouseenter="myBox()" onmouseleave="myBox()">put</button>
+            <div id="reveal">
+            <h4 class="ftext1">HelloFutureSpacers!</h4><br><p class="ftext2">Look!Whatisthat!?<br><br>Scrolldowntofindout!</p>
+    
+             </div></div>
+            
         </section>
 
 
-
+        <!-- 3rd section -->
 
         <section id="slide-2" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-2">
-
 
             <div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-2">
                 <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-2">
 
-
-
+                    <!-- animated astronaut-->
                     <div>
                         <img src="img/2spacer2.png" class="spacer2" alt="spacer2">
                     </div>
                 </div>
             </div>
 
-            <!--    Social buttons start here   -->
+            <!--    Social buttons   -->
 
             <div class="social">
 
@@ -125,17 +178,25 @@
                 <a href="https://thespaceaarhus.com/"><img src="img/logo1.png" width="60px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE SPACE</a>
                 <a href="https://www.linkedin.com/company/the-space-aarhus/"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LINKED&nbsp;IN</a>
             </div>
-            <!--    Social buttons end here   -->
+            
+            <!-- text box toggle -->
+            
+            <div class="toggle_box">
+            <button class="change" onmouseenter="myBox2()" onmouseleave="myBox2()">here</button>
+            <div id="reveal2">
+            <h4 class="ftext1">It'sacube?</h4><br><p class="ftext2">I’ve never seen or heard of such a planet ! Requesting permission to approach.<br><br>Over.</p>
+    
+                </div></div>
         </section>
 
 
-
+        <!-- 4th section -->
         <section id="slide-3" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-3">
 
             <div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-3">
                 <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-3">
 
-
+                    <!-- animated astronaut-->
                     <div>
                         <img src="img/forplanet3.png" class="planet" alt="planet">
                     </div>
@@ -150,17 +211,24 @@
                 <a href="https://thespaceaarhus.com/"><img src="img/logo1.png" width="60px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE SPACE</a>
                 <a href="https://www.linkedin.com/company/the-space-aarhus/"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LINKED&nbsp;IN</a>
             </div>
-            <!--    Social buttons end here   -->
+            
+            <!-- text box toggle -->
+            
+            <div class="toggle_box">
+            <button class="change" onmouseenter="myBox3()" onmouseleave="myBox3()">any</button>
+        <div id="reveal3">
+            <h4 class="ftext1">Roger that.<br>Standby.</h4><br><p class="ftext2">Permission granted. The planet that you’re approaching is called<b>The Space.</b>b><br>Based on your current location and speed you’ll be descendingin<b>Aarhus,Denmark.</b><br><br>I’ll assign you to explore<b>The Space Aarhus.</b><br><br>It’s a nice<b>non-profit organisation</b>run by cosmic travellers, just like you.<br><br>They<br>can help<br>you meet other like-minded beings and<br>integrate and feel at home in Aarhus.</p>
+    
+                </div></div>
         </section>
 
 
-
+        <!-- 5th section -->
         <section id="slide-4" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-4">
             <div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-4">
                 <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-4">
 
-
-
+                    <!-- animated astronaut-->
                     <div>
                         <img src="img/5flag.png" class="flag" alt="flag">
                     </div>
@@ -176,16 +244,25 @@
                 <a href="https://thespaceaarhus.com/"><img src="img/logo1.png" width="60px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE SPACE</a>
                 <a href="https://www.linkedin.com/company/the-space-aarhus/"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LINKED&nbsp;IN</a>
             </div>
-            <!--    Social buttons end here   -->
+            
+            <!-- text box toggle -->
+            
+            <div class="toggle_box">
+            <button class="change" onmouseenter="myBox4()" onmouseleave="myBox4()">thing</button>
+        <div id="reveal4">
+        <h4 class="ftext1">The Space offers:</h4><br><p class="ftext2"><li>Networking events</li><li>Social and cultural events</li><li>Talks</li><li>Leisure activities</li><br><b>Online and offline</b>,and all in<b>English!</b><br><br>These amazing<b>events related to well-being, business, education, and friendship-building</b>are always organised by incredible Spacers. Physical events are held a tFo-byen Aarhus(Frederiksgade78CinAarhus).<br><br>
+Through their social media channels they also <b>provide tips on how to find a job, hot spots and fun things to do in Aarhus/Denmark, and how to learn Danish </b>-amongst other things.</p>
+    
+                </div></div>
         </section>
 
 
-
+        <!-- 6th section -->
         <section id="slide-5" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-5">
             <div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-5">
                 <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-5">
 
-
+                    <!-- animated astronaut-->
                     <div>
                         <img src="img/5flag2.png" class="flag2" alt="flag2">
                     </div>
@@ -202,15 +279,23 @@
                 <a href="https://thespaceaarhus.com/"><img src="img/logo1.png" width="60px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE SPACE</a>
                 <a href="https://www.linkedin.com/company/the-space-aarhus/"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LINKED&nbsp;IN</a>
             </div>
-            <!--    Social buttons end here   -->
+            
+            <!-- text box toggle -->
+            
+            <div class="toggle_box">
+            <button class="change" onmouseenter="myBox5()" onmouseleave="myBox5()">you</button>
+        <div id="reveal5">
+        <h4 class="ftext1">“The Space to be in Aarhus to meet new people, connect and grow!”</h4><br><p class="ftext2">The following guide lines are a statement of how these Spacers aspire to be and work together. <br>These guide lines are a tool for the way Spacers relate to eachother. <br><br>The Space <b>exists to inspire, empower, and educate internationals </b>in Aarhus to meet, connect and grow.<br><br>We aspire to be <b>inclusive and always do our best to help everyone feel welcome and at home</b>.<br><br>We believe in the <b>importance of community </b>.<br><br>Together, we can co-create the world we want to live in. Therefore, <b>we encourage you to join forces with The Space to help bring our purpose to life.</b></p>
+    
+                </div></div>
         </section>
 
-
+        <!-- 7th section -->
         <section id="slide-6" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-6">
             <div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 0; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-6">
                 <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 0;" data-anchor-target="#slide-6">
 
-
+                    <!-- animated astronaut-->
                     <div>
                         <img src="img/5vol22.png" class="spacer3" alt="spacer3">
                     </div>
@@ -226,17 +311,25 @@
                 <a href="https://thespaceaarhus.com/"><img src="img/logo1.png" width="60px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE SPACE</a>
                 <a href="https://www.linkedin.com/company/the-space-aarhus/"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LINKED&nbsp;IN</a>
             </div>
-            <!--    Social buttons end here   -->
+            
+            <!-- text box toggle -->
+            
+            <div class="toggle_box">
+            <button class="change" onmouseenter="myBox6()" onmouseleave="myBox6()">want</button>
+        <div id="reveal6">
+        <h4 class="ftext1">So who are these Spacers?</h4><br><p class="ftext2">Each member of this community proudly wears this title.<br><br>The Space is for <b>everyone </b>in Aarhus.<br><br>Business professionals, students, parents, expats - basically <b>everyone that is interested in our content and events!</b> We all speak English when we’re together, but that’s not everyone’s native language. <br><br>Just like the first people in outer Space, <b>we are pioneers. </b>Brave people that came to live in Aarhus and were <b>bold enough to explore unknown paths and leave our comfort zone.</b><br></p>
+    
+                </div></div>
         </section>
 
 
 
-
+        <!-- 8th section -->
         <section id="slide-7" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-7">
             <div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 1; width: 200%; height: 200%; top: -50%; left: -50%;" data-anchor-target="#slide-7">
                 <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 1;" data-bottom="opacity: 1;" data-anchor-target="#slide-7">
 
-
+                    <!-- animated astronaut-->
                     <div>
                         <img src="img/6vol12.png" class="spacer4" alt="spacer4">
                     </div>
@@ -244,26 +337,38 @@
 
             </div>
 
-            <!--    Social buttons start here   -->
+            <!--    Social buttons   -->
 
             <div class="social">
-
                 <a href="https://www.facebook.com/thespaceaarhus"><i class="fab fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FACEBOOK</a>
                 <a href="https://www.instagram.com/the_space_aarhus/"><i class="fab fa-instagram"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSTAGRAM </a>
                 <a href="https://thespaceaarhus.com/"><img src="img/logo1.png" width="60px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THE SPACE</a>
                 <a href="https://www.linkedin.com/company/the-space-aarhus/"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LINKED&nbsp;IN</a>
             </div>
-            <!--    Social buttons end here   -->
-
+            
+            <!-- text box toggle -->
+            
+            <div class="toggle_box">
+            <button class="change" onmouseenter="myBox7()" onmouseleave="myBox7()">here</button>
+        <div id="reveal7">
+        <h4 class="ftext1">Want to know more or get in touch? We’d love to hear from you.</h4><br><br><p class="ftext2">Check out our website or social media channels to <b>see what events are coming up! </b><br><br><b>Want to collaborate? </b><br><br>If you are interested in collaborating with The Space, please reach out to us at: interspace.aarhus@gmail.com<br>
+<br>We'll get back to you in lightning speed!</p>
+    
+                </div></div>
+            
         </section>
 
     </main>
-
+    <!-- js library -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- preloader plugin -->
     <script src="js/imagesloaded.js"></script>
+    <!-- skrollr plugin -->
     <script src="js/skrollr.js"></script>
+    <!-- main js for skroll animation -> the only js we changed from demo -->
     <script src="js/_main.js"></script>
-
+    <!-- js for text boxes - hide and show toggle -->
+    <script src="js/reveal.js"></script>
 
 </body>
 

@@ -1,8 +1,15 @@
 /* 
 
-@ihatetomatoes
+styling as for demo by
+Petr Tichy - @ihatetomatoes
+-changed according to needs for 'The Space' project
+
+        ==============================
+the only change here from original demo are the .bcg classes for different sections
+        ==============================
 
 */
+
 /*
  * HTML5 Boilerplate
  *
@@ -15,34 +22,11 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
-
 body {
     font-size: 1em;
     line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
 
 /*
  * A better looking default horizontal rule
@@ -114,9 +98,7 @@ body {
 .no-js {
 	padding-top: 106px;
 }
-h2 {
-	margin-top: 0;
-}
+
 .loading {
 	background: url('../img/ico_loading.gif') no-repeat center center;
 }
@@ -148,32 +130,27 @@ main {
 	top: 0;
 	left: 0;
 }
-/* Slide 1 */
-.bcg {background-image:url('../img/planet1.jpg');}
 
-/* Slide 2 */
+
+/* ============================================================= */
+/* changing  images as background attached to different sections */
+/* ============================================================= */
+
+.bcg {background-image:url('../img/mainbg.png');}
+
+#slide-1 .bcg {background-image:url('../img/planet1.jpg');}
+
 #slide-2 .bcg {background-image:url('../img/planet2.jpg');}
 
-/* Slide 3 */
 #slide-3 .bcg {background-image:url('../img/planet3.jpg');}
 
-#slide-4 .bcg {background-image:url('../img/landscape1.jpg');}
+#slide-4 .bcg {background-image:url('../img/landscape.jpg');}
 
-#slide-5 .bcg {background-image:url('../img/flag.jpg');}
+#slide-5 .bcg {background-image:url('../img/landspace.jpg');}
 
-#slide-6 .bcg {background-image:url('../img/planet3.jpg');}
+#slide-6 .bcg {background-image:url('../img/landscape2.jpg');}
 
-#slide-7 .bcg {background-image:url('../img/planet3.jpg');}
-
-
-
-.homeSlide h2 {
-	color: #1c1d1e;
-	font-size: 45px;
-	line-height: 48px;
-	margin-bottom: 12px;
-	text-align: center;
-}
+#slide-7 .bcg {background-image:url('../img/landscape1.jpg');}
 
 
 
