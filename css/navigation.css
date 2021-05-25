@@ -6,7 +6,7 @@
 
     margin: 20px 20px 20px 20px;
     z-index: 3000;
-    position: absolute;
+    position: fixed;
 }
 
 body {
