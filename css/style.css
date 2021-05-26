@@ -216,8 +216,8 @@ button::after {
     z-index: 999;
     position: fixed;
     top: 15%;
-    left: 15%;
-    width: 370px;
+    left: 25%;
+    width: 400px;
     height: 500px;
     padding: 20px 20px 20px 20px;
     border-radius: 20px;
