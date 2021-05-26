@@ -36,7 +36,7 @@
 		} 
 	    
 	    $slide.height(winH*2);
-	    $('#slide-1, #slide-7').height(winH*2);
+	    $('#slide-1, #slide-8').height(winH*2);
 	    
 	    s.refresh($('.homeSlide'));
 	    
