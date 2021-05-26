@@ -93,7 +93,7 @@ body {
 	display: none;
 	width: 1px;
 	height: 1px;
-	visibility: none;
+	visibility: hidden;
 }
 .no-js {
 	padding-top: 106px;
