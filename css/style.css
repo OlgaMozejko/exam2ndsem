@@ -82,6 +82,16 @@
     margin-right: 80px;
 }
 
+.welcomet2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #F1C064;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -40px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
 /* text overlay toggle styling */
 
 #reveal {
