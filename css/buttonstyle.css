@@ -1,18 +1,20 @@
 
 .social {
-    position: fixed; right: 0;
+    position: fixed; 
+    right: 0;
     height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     bottom: 10%;
     transform: translate(220px, 0);
+    z-index: 99999;
 }
 
 .social a {
     
     color: #fff;
-    background:#F1C06490;
+    background-color: #F1C06490;
     text-decoration: none;
     padding: 20px;
     font-weight: 600;
@@ -23,10 +25,10 @@
     border-radius: 50px;
     transition: 1s;
     transition-property:transform;
+    z-index: 9999;
 }
 
 .social a:hover {
-    
     transform: translate(-140px, 0);
 }
 
